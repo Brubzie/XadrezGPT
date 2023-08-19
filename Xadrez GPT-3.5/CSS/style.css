@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 60px); /* Aumentei o tamanho das células */
+  grid-template-rows: repeat(8, 60px); /* Aumentei o tamanho das células */
+  border: 2px solid #000;
+}
+
+.cell {
+  width: 60px; /* Aumentei o tamanho das células */
+  height: 60px; /* Aumentei o tamanho das células */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.cell.white {
+  background-color: #f0d9b5;
+}
+
+.cell.black {
+  background-color: #b58863;
+}
+
+.cell.selected {
+  background-color: #9acd32;
+}
+
+.piece {
+  pointer-events: none;
+}
